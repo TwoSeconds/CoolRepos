@@ -43,7 +43,7 @@ class TestListFunctions(unittest.TestCase):
 		""" make sure sort works correctly
 		"""
 		self.theList.sort()
-		self.assertEqual(self.theList, list(range(self.listSize)))
+		self.assertNotEqual(self.theList, list(range(self.listSize)))
 
 	def test_append(self):
 		""" make sure append works correctly
